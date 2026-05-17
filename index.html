@@ -2,98 +2,202 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Spoorti N. Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spoorti N. | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Spoorti N.</h1>
-    <p>Computer Science Engineering Student | Machine Learning Enthusiast</p>
-  </header>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Software Engineer in Training</p>
+        <h1>Spoorti N.</h1>
+        <p class="hero-description">
+          Computer Science Engineering student focused on machine learning, full-stack development, and supply chain analytics. I build practical solutions that turn data into impact.
+        </p>
+        <div class="hero-links">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <p class="contact-title">Contact</p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:spoortini24@gmail.com">spoortini24@gmail.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+919113517349">+91 91135 17349</a></li>
+          <li><strong>Location:</strong> Bengaluru, Karnataka</li>
+        </ul>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/spoorti2123" target="_blank">LinkedIn</a>
+          <a href="https://github.com/spoorti2123" target="_blank">GitHub</a>
+        </div>
+      </aside>
+    </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <nav class="main-nav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Demonstrates strong analytical, communication, and teamwork skills, with proven ability to quickly adapt to new environments. Eager to contribute to team success and further develop professional skills.
-    </p>
-  </section>
+    <main>
+      <section id="about" class="section">
+        <div class="section-heading">
+          <span class="section-number">01.</span>
+          <h2>About</h2>
+        </div>
+        <p>
+          I am a driven Computer Science Engineering student with proven analytical, communication, and teamwork skills. I enjoy solving real-world problems through machine learning, automation, and modern web technologies.
+        </p>
+      </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>B.E. in Computer Science</strong><br>Cambridge Institute of Technology North, Bengaluru (GPA: 8.7)</li>
-      <li><strong>Pre-University: PCMB</strong><br>Sri Vidyaniketan PU College, Gangavathi (GPA: 89%)</li>
-      <li><strong>Secondary Education</strong><br>Adarsha Vidyalaya School, Kankagiri (GPA: 93.73%)</li>
-    </ul>
-  </section>
+      <section id="experience" class="section">
+        <div class="section-heading">
+          <span class="section-number">02.</span>
+          <h2>Experience</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Samsung Innovation Campus Intern</h3>
+            <p class="meta">Nov 2025 – Feb 2026 • Bengaluru, Karnataka</p>
+            <ul>
+              <li>Trained in Python and core machine learning concepts including data cleaning, preprocessing, visualization, regression, classification, ANN, and CNN.</li>
+              <li>Built an end-to-end ML pipeline for data extraction, feature handling, and training models to generate meaningful predictions.</li>
+              <li>Performed model evaluation and optimization through iterative experimentation with neural networks.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>QSpiders Intern (Java Full Stack)</h3>
+            <p class="meta">Feb 2026 – Ongoing • Bangalore, Karnataka</p>
+            <ul>
+              <li>Completed hands-on full-stack training with HTML, CSS, JavaScript, Core Java, and SQL.</li>
+              <li>Developed CRUD APIs and managed backend database integration for reliable data operations.</li>
+              <li>Implemented responsive web pages and applications that are both functional and visually polished.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Drug Inventory Supply Chain</strong><br>
-        Developed a tracking system for inventory management, improving detection accuracy and efficiency in the supply chain.
-      </li>
-      <li>
-        <strong>AI Sign Recognition System</strong><br>
-        Built an AI-powered system to classify American Sign Language signs using deep learning.
-      </li>
-      <li>
-        <strong>Pothole Detection using Deep Learning</strong><br>
-        Implemented a system to detect potholes and alert drivers in real-time using image processing.
-      </li>
-    </ul>
-  </section>
+      <section id="projects" class="section section-accent">
+        <div class="section-heading">
+          <span class="section-number">03.</span>
+          <h2>Projects</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Pothole Detection</h3>
+            <p class="tech">Python · OpenCV · TensorFlow · YOLO · PostGIS · Flask · Docker</p>
+            <ul>
+              <li>Built a real-time computer vision system using YOLOv4/YOLOv5 to detect potholes in dashboard feeds at 20 FPS.</li>
+              <li>Developed OpenCV + geotagging preprocessing to reduce false positives by 30% and improve road mapping reliability.</li>
+              <li>Designed a Flask API with PostGIS and Docker to deliver pothole heatmaps and downloadable CSV reports.</li>
+              <li>Processed streams asynchronously with Celery and Redis, reducing manual reporting by 70%.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Hepatitis Disease Risk Prediction</h3>
+            <p class="tech">Python · Scikit-learn · TensorFlow · Seaborn</p>
+            <ul>
+              <li>Created a machine learning model to predict hepatitis patient survival risk using clinical and laboratory data.</li>
+              <li>Compared Logistic Regression, Decision Tree, Random Forest, and SVM models for best predictive performance.</li>
+              <li>Evaluated results using accuracy, precision, recall, F1-score, and confusion matrix for medical relevance.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-  <section id="certifications">
-    <h2>Certifications & Activities</h2>
-    <ul>
-      <li>1st Runner Up - Data Structures Project Exhibition, Sai Vidya Institute of Technology</li>
-      <li>Geodata Processing using Python & ML – Certified by ISRO</li>
-      <li>SPARK-A-THON participant at Magnovite Fest</li>
-      <li>Attended Microsoft Reactor & Neo4j Event, Bangalore</li>
-      <li>Completed Android Development course by Simplilearn</li>
-      <li>Active participant in tech and coding events</li>
-    </ul>
-  </section>
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <span class="section-number">04.</span>
+          <h2>Technical Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h4>Programming</h4>
+            <p>Java · Python · C · JavaScript</p>
+          </div>
+          <div class="skill-group">
+            <h4>Web</h4>
+            <p>React.js · Node.js · Express.js · HTML · CSS</p>
+          </div>
+          <div class="skill-group">
+            <h4>Databases</h4>
+            <p>MySQL · MongoDB · SQL · NoSQL</p>
+          </div>
+          <div class="skill-group">
+            <h4>Tools</h4>
+            <p>Git · Docker · VS Code · IntelliJ · PyCharm · Eclipse</p>
+          </div>
+        </div>
+      </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Machine Learning, AI</li>
-      <li>Java</li>
-      <li> Web Technology</li>
-      <li>DBMS (SQL)</li>
-      <li>Project Planning, Communication</li>
-    </ul>
+      <section id="education" class="section section-accent">
+        <div class="section-heading">
+          <span class="section-number">05.</span>
+          <h2>Education</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>B.E. in Computer Science &amp; Design</h3>
+            <p class="meta">Cambridge Institute of Technology North Campus</p>
+            <p>Feb 2026 – Present • CGPA: 8.8</p>
+          </article>
+          <article class="card">
+            <h3>Higher Secondary Certificate</h3>
+            <p class="meta">Sri Vidyaniketan PU College</p>
+            <p>Apr 2020 – Aug 2022 • Percentage: 89%</p>
+          </article>
+        </div>
+      </section>
 
-    <h3>Languages</h3>
-    <ul>
-      <li>English </li>
-      <li>Kannada </li>
-    </ul>
-  </section>
+      <section id="certifications" class="section">
+        <div class="section-heading">
+          <span class="section-number">06.</span>
+          <h2>Certifications</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Cloud Computing Intern</h3>
+            <p class="meta">CoreXtech IT Services Pvt Ltd</p>
+          </article>
+          <article class="card">
+            <h3>Web Development Intern</h3>
+            <p class="meta">Senstron Systems Private Limited</p>
+          </article>
+          <article class="card">
+            <h3>Emerging Technologies</h3>
+            <p class="meta">Infosys Springboard</p>
+          </article>
+        </div>
+        <p class="extra-note">Extra-curricular: 1st Runner Up, Data Structures Project Exhibition at Sai Institute of Technology.</p>
+      </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="spoortiningalabandi2123@gmail.com">spoortiningalabandi2123@gmail.com</a></p>
-    <p><strong>Location:</strong> Bengaluru, India 560064</p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/spoorti-ningalabandi-5035a32a2" target="_blank">spoorti-ningalabandi</a></p>
-  </section>
+      <section id="contact" class="section section-contact">
+        <div class="section-heading">
+          <span class="section-number">07.</span>
+          <h2>Contact</h2>
+        </div>
+        <p>Looking to collaborate on machine learning or full-stack projects? Reach out and let's connect.</p>
+        <div class="contact-details">
+          <div><strong>Email</strong><br><a href="mailto:spoortini24@gmail.com">spoortini24@gmail.com</a></div>
+          <div><strong>Phone</strong><br><a href="tel:+919113517349">+91 91135 17349</a></div>
+          <div><strong>LinkedIn</strong><br><a href="https://linkedin.com/in/spoorti2123" target="_blank">linkedin.com/in/spoorti2123</a></div>
+          <div><strong>GitHub</strong><br><a href="https://github.com/spoorti2123" target="_blank">github.com/spoorti2123</a></div>
+        </div>
+      </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Spoorti N. All rights reserved.</p>
-  </footer>
+    <footer class="footer">
+      <p>&copy; 2026 Spoorti N. — Built with HTML, CSS &amp; JavaScript</p>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
